@@ -1,13 +1,15 @@
 ---
 ---
 
-@import "fonts", "includes", "color", "layout";
+@import "fonts", "color", "layout";
 
 html, body {padding: 0;margin: 0;background-color: var(--dark);}
 
+nav {
+    position: fixed;
+}
+
 #intro {
-    width: 100vw;
-    height: 100vh;
     background-color: #0000;
     position: relative;
     display: flex;
@@ -20,9 +22,22 @@ html, body {padding: 0;margin: 0;background-color: var(--dark);}
     left: 0;
 }
 
+
+#intro > h1 {
+    text-align: center;
+    width: auto;
+    object-fit: contain;
+    border: none;
+}
+
+#intro > h1 > img {
+    height: 3em;
+}
+
 #buttons {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 0.2em;
 }
 
@@ -36,7 +51,7 @@ html, body {padding: 0;margin: 0;background-color: var(--dark);}
     background-color: var(--dark);
     color: var(--text-dark);
     padding: 0.4em;
-    margin: 0 0.4em;
+    margin: 0.2em 0.4em;
     text-decoration: none;
     transition: color 100ms, background 100ms;
 }
@@ -53,4 +68,16 @@ html, body {padding: 0;margin: 0;background-color: var(--dark);}
 
 #buttons > a:hover > img {
     filter: invert(1);
+}
+
+@media screen and (max-width: calc(1920px / 2)) {
+    #intro > h1 > img {
+        height: 2em;
+    }
+}
+
+@media screen and (max-width: calc(600px)) {
+    #intro > h1 > img {
+        height: 1em;
+    }
 }

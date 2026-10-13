@@ -17,11 +17,16 @@ i, em {
 h1 {
     font-family: Montserrat, sans-serif;
     font-weight: 300;
+    text-align: left;
+    width: 100%;
+    border-bottom: var(--text) solid 1px;
 }
 
 h2, h3 {
     font-family: Montserrat, sans-serif;
     font-weight: 600;
+    text-align: left;
+    width: 100%;
 }
 
 a {

@@ -6,10 +6,11 @@
         <meta charset="utf-8">
         <title>MonoCHRONOS</title>
         <link rel="stylesheet" href="{{ '/css/screen_home.css' | relative_url }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         {% include navigation.html %}
-        <div id="intro"><h1><img src="/media/Wordmark.svg" alt="MonoCHRONOS" style="height: 3em;"/></h1></div>
+        <div id="intro"><h1><img src="/media/Wordmark.svg" alt="MonoCHRONOS"/></h1></div>
         <div id="centeredContainer">
         <div>
             <p>Hello, my name is MonoChronos, or MonoHexa. I make small projects that may not really lift off. Hope you have fun with my stuff and posts!</p>
@@ -20,6 +21,7 @@
                 <a href="https://github.com/monohexa"><img src="/media/GitHub.svg" style="height: 1em;"/> GitHub</a>
             </div>
         </div>
+        {% include footer.html %}
         </div>
     </body>
 </html>
