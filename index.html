@@ -1,40 +1,27 @@
+---
+---
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <title>MonoCHRONOS</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div id="flex1">
-      <div style="display:block; height: 100px;">
-        <div style="position: relative; bottom:450px; display: flex;justify-content: center;align-items: center;">
-          <img id="icon" src="media/mono-icon.svg"/>
-        </div>
-      </div>
-      <h1>MonoCHRON<img src="media/mono-icon.svg" id="header-icon" alt="O"/>S</h1>
-      <div id="flex2">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MonoCHRONOS</title>
+        <link rel="stylesheet" href="{{ '/css/screen_home.css' | relative_url }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        {% include navigation.html %}
+        <div id="intro"><h1><img src="/media/Wordmark.svg" alt="MonoCHRONOS"/></h1></div>
+        <div id="centeredContainer">
         <div>
-          <a href="https://youtube.com/@MonoHexa">
-            <img id="size-2" src="media/links/yt_icon_white_digital.svg" alt="YOUTUBE "/>
-          </a>
+            <p>Hello, my name is MonoChronos, or MonoHexa. I make small projects that may not really lift off. Hope you have fun with my stuff and posts!</p>
+            <div id="buttons">
+                <a href="/sitemap.html">Sitemap</a>
+                <a href="https://youtube.com/@MonoHexa"><img src="/media/YouTube.svg" style="height: 1em;"/> YouTube</a>
+                <a href="https://roblox.com/users/856480369/profile"><img src="/media/Roblox.svg" style="height: 1em;"/> Roblox</a>
+                <a href="https://github.com/monohexa"><img src="/media/GitHub.svg" style="height: 1em;"/> GitHub</a>
+            </div>
         </div>
-        <div>
-          <a href="https://www.roblox.com/users/856480369/profile">
-            <img src="media/links/Roblox_Tilt_White.svg" alt="ROBLOX "/>
-          </a>
+        {% include footer.html %}
         </div>
-        <div>
-          <a href="https://github.com/monoc0">
-            <img src="media/links/github-mark-white.svg" alt="GITHUB "/>
-          </a>
-        </div>
-        <div>
-          <a href="/index.html">
-            <img src="media/links/plus-circle-svgrepo-com.svg" alt="MORE "/>
-          </a>
-        </div>
-      </div>
-      <p>A small website dedicated for my GitHub Pages. You can find me with the links above!</p>
-    </div>
-  </body>
+    </body>
 </html>
