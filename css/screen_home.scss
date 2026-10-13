@@ -1,0 +1,56 @@
+---
+---
+
+@import "fonts", "includes", "color", "layout";
+
+html, body {padding: 0;margin: 0;background-color: var(--dark);}
+
+#intro {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left: 0;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    padding: 0.2em;
+}
+
+#buttons > a {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 1.5em;
+    font-size: 1.5em;
+    background-color: var(--dark);
+    color: var(--text-dark);
+    padding: 0.4em;
+    margin: 0 0.4em;
+    text-decoration: none;
+    transition: color 100ms, background 100ms;
+}
+
+#buttons > a > img {
+    margin-right: 0.2em;
+    transition: filter 100ms;
+}
+
+#buttons > a:hover {
+    background: none;
+    color: var(--text);
+}
+
+#buttons > a:hover > img {
+    filter: invert(1);
+}
