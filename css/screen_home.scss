@@ -13,6 +13,7 @@ nav {
     background-color: #0000;
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -22,6 +23,21 @@ nav {
     left: 0;
 }
 
+@keyframes spinning {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#special {
+    position: absolute;
+    height: 70vh;
+    top: -35vh;
+    animation: spinning 10s infinite linear
+}
 
 #intro > h1 {
     text-align: center;

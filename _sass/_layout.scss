@@ -27,6 +27,25 @@ body {
     border-radius: 1em 1em 0 0;
 }
 
+#centeredContainer > div h1 {
+    margin-bottom: 0;
+}
+
+#centeredContainer > div p {
+    width: 100%;
+    text-align: left;
+    margin: 0.5em 0;
+}
+
+#centeredContainer > div img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 0.25em auto;
+    text-align: center;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -99,9 +118,11 @@ footer > p {
         height: 100%;
     }
     
-    #centeredContainer > div > p {
-        margin-left: 1em;
-        margin-right: 1em;
+    #centeredContainer > div p, 
+    #centeredContainer > div h2,
+    #centeredContainer > div h1,
+    #centeredContainer > div h3{
+        width: 95%;
         border-radius: 0;
     }
 
