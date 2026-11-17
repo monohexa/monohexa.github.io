@@ -1,3 +1,12 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://monohexa.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+title: "MonoCHRONOS" # the name of your site, e.g. ACME Corp.
+domain: monohexa.github.io
+description: >- # this means to ignore newlines until "collections:"
+  Home to the projects and works of MonoCHRONOS.
+
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:year-:month-:day/:title
+
